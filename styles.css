@@ -1,93 +1,3 @@
-.margins{
-  margin: 3% 3% 3% 3%;
-}
-
-.fadein1 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-}
-
-.fadein2 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: .6s;
-    animation-fill-mode: forwards;
-}
-
-.fadein3 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-}
-
-.fadein4 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 1.4s;
-    animation-fill-mode: forwards;
-}
-
-.fadein5 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 1.8s;
-    animation-fill-mode: forwards;
-}
-
-.fadein6 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 2.2s;
-    animation-fill-mode: forwards;
-}
-
-.fadein7 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 2.6s;
-    animation-fill-mode: forwards;
-}
-
-.fadein8 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-}
-
-.fadein9 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 3.4s;
-    animation-fill-mode: forwards;
-}
-
-.fadein10 {
-    opacity: 0;
-    animation: fadein 2s;
-    animation-delay: 3.8s;
-    animation-fill-mode: forwards;
-}
-
-.fadeInMarquee {
-    opacity: 0;
-    animation: fadein 5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .menuStyle {
     opacity: 0;
     animation: menuStyle 1s;
@@ -111,35 +21,21 @@
     }
 }
 
-.welcomeTextStyle {
-    margin-right: 3vmin;
-    opacity: 0;
-    animation: welcomeTextStyle 2s;
-    animation-delay: 2.5s;
-    animation-fill-mode: forwards;
-}
+.top{
 
-@keyframes welcomeTextStyle {
-    0% {
-        transform: translateX(100%) rotate(-120deg);
-        color: #DDAF26;
-        opacity: 0;
-    }
-    30% {
-        transform: translateX(0%) translateY(-500%) rotate(110deg);
-    }
-    100% {
-        transform: translateX(0px) translateY(150%) rotate(0deg);
-        color: white;
-        opacity: 1;
-    }
 }
-
+.hhsText{
+  position: relative;
+  height: auto;
+  width: 50%;
+  float: right;
+}
 
 .HHSLogo {
-  height: 25vh;
+  height: 50px;
   width: auto;
 }
+
 
 ul {
     padding-left: 3%;
@@ -153,29 +49,12 @@ ul li {
 
 head, body {
     overflow-x: hidden;
-    display: block;
     background-color: black;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -o-user-select: none;
-}
-
-.noscroll {
-    overflow-x: none;
-    overflow-y: none;
-}
-
-.verticalCenter {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translate(0, -50%)
-}
-
-.rtl {
-    direction: rtl;
 }
 
 .link {
@@ -185,30 +64,6 @@ head, body {
 
 a:hover {
     opacity: .7;
-}
-
-.bottomRightStyle {
-    position: absolute;
-    bottom: 5%;
-    right: 4%;
-}
-
-.extrasize {
-    font-size: 1000%;
-}
-
-.extrasizemain23 {
-    font-size: 6.5vmin;
-}
-
-.extrasize1 {
-    font-size: 4vmin;
-}
-
-.textright {
-    margin-right: 5vmin;
-    margin-left: 5vmin;
-    float: right;
 }
 
 .homeMarquee {
@@ -306,4 +161,94 @@ a:hover {
     right: 30px;
     font-size: 7vh;
     margin-left: 50px;
+}
+
+
+
+
+
+.fadein1 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+.fadein2 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+}
+
+.fadein3 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadein4 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+.fadein5 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+.fadein6 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+.fadein7 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 2.6s;
+    animation-fill-mode: forwards;
+}
+
+.fadein8 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.fadein9 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+}
+
+.fadein10 {
+    opacity: 0;
+    animation: fadein 2s;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+}
+
+.fadeInMarquee {
+    opacity: 0;
+    animation: fadein 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
