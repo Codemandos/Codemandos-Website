@@ -10,18 +10,15 @@
 </head>
 
 <body>
-
+  <script src="javascript.js"></script>
   <?php include_once("analyticstracking.php") ?>
 
-  <script src="javascript.js"></script>
+  <div class="top">
+    <a><img class="menuStyle fadein2" src="res/menu.png" onclick="openNav()"></a>
+    <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein3" src="res/hhstext.png"></a>
+  </div>
 
-      
-    <div class="top">
-      <img class="menuStyle" src="res/menu.png" onclick="openNav()">
-      <img class="hhsText" src="res/hhstext.png">
-    </div>
- 
-    <a target="_blank" href="http://hhs.sumnerschools.org/"><img class="HHSLogo" src="res/logo.png"/></a>
+
   <div>
     <div id="mySidenav" class="sidenav">
       <center>
@@ -44,12 +41,16 @@
         <a href="about/index.html">ABOUT</a>
 
       </center>
-      
+
     </div>
 
-        
-    
-  
+    <video id="vid" class="fadein6" preload="auto">
+    <source src="res/vid.mp4" type="video/mp4">
+    </video>
+
+    <div id="content" class="fadein4"  onclick="start()">
+     <img id="HHSLogo" class="fadein5" src="res/logo.png"/>
+    </div>
 
     <marquee scrollamount="13" class="homeMarquee fadeInMarquee">
       <a target="_blank" href="submit/index.html" class="link">
