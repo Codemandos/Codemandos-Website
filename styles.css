@@ -42,7 +42,7 @@
   top: 13vmin;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 1px;
   margin-bottom: 20px;
   outline-color: gold;
   outline-style: dotted;
