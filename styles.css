@@ -117,7 +117,7 @@ a:hover {
   margin-right: 8%;
 }
 
-@media only screen and (max-width: 20cm) {
+@media only screen and (max-width: 650px) {
   .homeMarquee{
     font-size: 150%;    
   }
