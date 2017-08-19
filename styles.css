@@ -40,9 +40,8 @@
   margin-top: 2vh;
   position: absolute;
   top: 13vmin;
-  right: 1.5vh;
-  left: 1.5vh;
   bottom: 1.5vh;
+  width:98.8%;
   outline-color: gold;
   outline-style: dotted;
   outline-width: 1vh;
