@@ -106,7 +106,6 @@ a:hover {
 }
 
 .homeMarquee {
-  font-size: 500%;
   position: absolute;
   bottom: 3%;
   white-space: nowrap;
@@ -117,6 +116,13 @@ a:hover {
   color: white;
   margin-right: 8%;
 }
+
+@media only screen and (max-width: 20cm) {
+  .homeMarquee{
+    font-size: 150%;    
+  }
+}
+
 
 /* The side navigation menu */
 
