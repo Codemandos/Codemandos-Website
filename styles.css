@@ -117,7 +117,7 @@ a:hover {
   margin-right: 8%;
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-device-width: 650px) {
   .homeMarquee{
     font-size: 500%;    
   }
