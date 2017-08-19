@@ -37,12 +37,13 @@
 }
 
 #content {
+  margin-top: 2vh;
   position: absolute;
-  margin: auto;
-  top: 1vmin;
-  left: 18;
-  right: 18;
-  bottom: 18;
+  top: 13vmin;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 20px;
   outline-color: gold;
   outline-style: dotted;
   outline-width: 1vh;
