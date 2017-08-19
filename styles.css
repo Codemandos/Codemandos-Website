@@ -84,6 +84,7 @@ ul li {
 
 head,
 body {
+  font-size: 25px;
   margin: 1vh;
   overflow-x: hidden;
   background-color: black;
@@ -111,7 +112,6 @@ a:hover {
 }
 
 .homeMarquee a {
-  font-size: 150%;
   color: white;
   margin-right: 8%;
 }
