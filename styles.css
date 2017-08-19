@@ -39,6 +39,7 @@
 #content {
   margin-top: 2vh;
   position: absolute;
+  margin: auto;
   top: 13vmin;
   left: 15;
   right: 15;
