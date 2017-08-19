@@ -111,7 +111,7 @@ a:hover {
 }
 
 .homeMarquee a {
-  font-size: 4vh;
+  font-size: 150%;
   color: white;
   margin-right: 8%;
 }
