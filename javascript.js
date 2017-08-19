@@ -2,7 +2,6 @@
 var isOpen = false;
 
 function openNavAction() {
-  pushHHS();
   if ((window.innerWidth / window.innerHeight) < 1) {
     document.getElementById("mySidenav").style.width = "100%";
   } else if ((window.innerWidth / window.innerHeight) < 1.2) {
@@ -30,11 +29,3 @@ window.addEventListener('resize', function(event) {
     openNavAction();
   }
 });
-
-function pushHHS() {
-  document.getElementById("HHSLogo").style.visibility = "hidden";
-}
-
-window.onload = function(){
-    document.getElementById('vid').play();
-}
