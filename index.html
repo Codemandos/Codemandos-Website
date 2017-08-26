@@ -1,7 +1,6 @@
 <html>
 
 <head>
-
   <title>HHSCS</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <meta name="viewport" content="user-scalable=no">
@@ -9,62 +8,47 @@
 </head>
 
 <body>
-
   <?php include_once("analyticstracking.php") ?>
+  <script src="menuScript.js"></script>
 
-  <script src="javascript.js"></script>
+  <div>
+    <div class="top">
+      <a><img class="menuStyle fadein2" src="res/menu.png" onclick="openNav()"></a>
+      <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein3" src="res/hhstext.png"></a>
+    </div>
 
-
-  <div class="top">
-    <a><img class="menuStyle fadein2" src="res/menu.png" onclick="openNav()"></a>
-    <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein3" src="res/hhstext.png"></a>
+    <div id="mySidenav" class="sidenav">
+      <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="getstarted/index.html">GET STARTED</a>
+        <a href="goals/index.html">GOALS</a>
+        <a href="media/index.html">MEDIA</a>
+        <a href="submit/index.html">SUBMISSIONS</a>
+        <a href="tools/index.html">LINKS</a>
+        <a href="about/index.html">ABOUT</a>
+      </center>
+    </div>
   </div>
 
 
   <div>
-    <div id="mySidenav" class="sidenav">
-      <center>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <a href="#">HOME</a>
-
-        <a href="getstarted/index.html">GET STARTED</a>
-
-        <a href="goals/index.html">CLUB GOALS</a>
-
-        <a href="workshops/index.html">WORKSHOPS</a>
-
-        <a href="submit/index.html">SUBMISSIONS</a>
-
-        <a href="tools/index.html">USEFUL TOOLS</a>
-
-        <a href="slack/index.html">SLACK</a>
-
-        <a href="about/index.html">ABOUT</a>
-
-      </center>
-
-    </div>
-
     <video id="vid" class="fadein6" autoplay loop muted playsinline>
     <source src="res/vid.mp4" type="video/mp4">
     </video>
-
     <div id="content" class="fadein4">
-      <a target="_blank" href="http://hhs.sumnerschools.org/"><img id="HHSLogo" class="fadein5" src="res/logo.png"/></a>
+      <a target="_blank" href="http://hhs.sumnerschools.org/"><img id="HHSLogo" class="fadein5" src="res/logo.png" oncontextmenu="return false;"/></a>
     </div>
-
     <marquee scrollamount="13" class="homeMarquee fadeInMarquee">
-      <a target="_blank" href="submit/index.html" class="link">
-        <font color="#DDAF26">NEW!!</font> Submit your creations
-        <font color="#DDAF26">HERE</font> for others to see!</a>
-      <a target="_blank" href="goals/index.html" class="link"> Wondering what's next for HHSCS? Read the  <font color="#DDAF26">Goals</font> Section</a>
+      <a target="_blank" href="https://www.remind.com/join/codemandos" class="link">
+        <font color="#DDAF26">IMPORTANT!!</font> Click here or text
+        <font color="#DDAF26">@codemandos</font> to
+        <font color="#DDAF26">81010</font> to sign up for Remind messages</a>
+      <a target="_blank" href="submit/index.html" class="link">Found something interesting? Submit it <font color="#DDAF26">HERE</font> for others to see!</a>
+      <a target="_blank" href="goals/index.html" class="link"> Wondering what's next for the COdemandos? Read the  <font color="#DDAF26">Goals</font> Section</a>
       <a target="_blank" href="rules/index.html" class="link"> Make sure you understand and agree to the  <font color="#DDAF26">Club Rules</font>!</a>
       <a target="_blank" href="meetings/index.html" class="link"> Click here to see the  <font color="#DDAF26">Meeting Schedule</font></a>
-      <a target="_blank" href="slack/index.html" class="link">
-        <font color="#DDAF26">Join the Slack Team</font> to chat with people around the world!</a>
       <a target="_blank" href="tools/index.html" class="link"> Check out some useful  <font color="#DDAF26">Websites and Tools</font> to help you code</a>
-      <a target="_blank" href="workshops/index.html" class="link"> Done with all that? Start coding with these <font color="#DDAF26">Workshops</font></a>
     </marquee>
   </div>
 

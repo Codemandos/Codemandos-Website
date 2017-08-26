@@ -2,62 +2,33 @@
 
 <head>
     <title>HHSCS | MEETINGS</title>
-    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
     <meta name="viewport" content="user-scalable=no">
 </head>
 
 <body>
-    <?php include_once("../analyticstracking.php")?>
+     <?php include_once("analyticstracking.php") ?>
+  <script src="/menuScript.js"></script>
 
-    <font color="#DDAF26" class="titleTextStyle">
-        MEETINGS
-    </font>
+  <div>
+    <div class="top">
+      <a><img class="menuStyle fadein2" src="/res/menu.png" onclick="openNav()"></a>
+      <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein3" src="/res/hhstext.png"></a>
+    </div>
 
-    <script src="../javascript.js"></script>
-    <img class="menuStyle " src="../menu.png" onclick="openNav()" height="10%">
     <div id="mySidenav" class="sidenav">
-        <center>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="../index.html">HOME</a>
-            <a href="../getstarted/index.html">GET STARTED</a>
-            <a href="../goals/index.html">CLUB GOALS</a>
-            <a href="../workshops/index.html">WORKSHOPS</a>
-            <a href="../submit/index.html">SUBMISSIONS</a>
-            <a href="../tools/index.html">USEFUL TOOLS</a>
-            <a href="../slack/index.html">SLACK</a>
-            <a href="../about/index.html">ABOUT</a>
-
-        </center>
+      <center>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">HOME</a>
+        <a href="getstarted/index.html">GET STARTED</a>
+        <a href="goals/index.html">GOALS</a>
+        <a href="media/index.html">MEDIA</a>
+        <a href="submit/index.html">SUBMISSIONS</a>
+        <a href="tools/index.html">LINKS</a>
+        <a href="about/index.html">ABOUT</a>
+      </center>
     </div>
-
-    <div class="bodyDivStyle verticalCenter">
-
-        <font color="white" class="bodyTextStyle fadein2">
-            <ul class="rtl">
-                <li>
-                    Every
-                    <font color="#DDAF26">Wednesday</font> After-School
-                    <br>from
-                    <font color="#DDAF26">3:00 to 4:00</font>
-                </li>
-                <br>
-                <li>
-                    <font color="#DDAF26">Announced</font> every other
-                    <font color="#DDAF26">Friday</font>
-                    <br>Commando Time - Announced
-                </li>
-                <br>
-                <li>
-                    Mrs. Willyard's Room
-                    <br>- Science Hall -
-                    <font color="#DDAF26">226</font>
-                </li>
-        </font>
-        </ul>
-    </div>
+  </div>
+  
 </body>
-
-</html>
->
-
 </html>
