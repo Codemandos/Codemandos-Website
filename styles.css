@@ -24,8 +24,8 @@
 }
 
 .content {
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   overflow: auto;
   color: white;
   margin-top: 2vh;
@@ -90,7 +90,7 @@ ul li {
 head,
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   margin: 1vh;
   overflow-x: hidden;
   background-color: black;
