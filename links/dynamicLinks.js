@@ -7,9 +7,9 @@ $(document).ready(function() {
     var linkRaw = data.feed.entry[1]['content']['$t'];
     var descriptionRaw = data.feed.entry[2]['content']['$t'];
 
-    var titleFiltered = titleRaw.split(', ');
-    var linkFiltered = linkRaw.split(', ');
-    var descriptionFiltered = descriptionRaw.split(', ');
+    var titleFiltered = titleRaw.split(', _');
+    var linkFiltered = linkRaw.split(', _');
+    var descriptionFiltered = descriptionRaw.split(', _');
     //  console.log(titleFiltered);
     var curatedData = [];
     for (i = 0; i < titleFiltered.length; i++) {
@@ -18,7 +18,7 @@ $(document).ready(function() {
       entry.push(descriptionFiltered[i].split(": ")[1]);
       curatedData.push(entry);
     }
-
+    console.log(descriptionRaw);
     for (z = 0; z < curatedData.length; z++) {
       if (!curatedData[z][2].includes("http")) {
         curatedData[z][2] = "http" + curatedData[z][2];
@@ -26,8 +26,6 @@ $(document).ready(function() {
       var newEl = $(('<a id="' + curatedData[z][0].slice(1) + '" href="' + curatedData[z][2] + '"></a>')).append($("<font color='gold'></font>").text(curatedData[z][1])).append($("<i></i>").text(" - " + curatedData[z][3]));
       $('ul').prepend(newEl);
       $('#' + curatedData[z][0].slice(1)).wrap("<li></li>");
-
     }
-
   });
 })
