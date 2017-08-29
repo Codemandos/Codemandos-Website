@@ -50,7 +50,7 @@
 .tip{
   text-align: center;
   outline-color: gold;
-  outline-style: inset;
+  outline-style: dotted;
   outline-width: .6vh;
   padding: 10px 8px 10px 8px
 }
