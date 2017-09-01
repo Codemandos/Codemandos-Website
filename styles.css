@@ -35,11 +35,27 @@
   left: 0;
   right: 0;
   bottom: 1px;
-  margin-bottom: 20px;
-  outline-color: gold;
+  margin-bottom: 2vh;
+  outline-color: #DDAF26;
   outline-style: dotted;
   outline-width: 1vh;
 }
+
+.scMediaBar{
+  bottom:10%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 12vh;
+}
+
+.scMediaBar a{
+   float:left;
+}
+
+.scMediaBar a img{
+  height: 7vh;
+}
+
 .overFlowHidden{
   overflow: hidden;
 }
@@ -49,7 +65,7 @@
 
 .tip{
   text-align: center;
-  outline-color: gold;
+  outline-color: #DDAF26;
   outline-style: dotted;
   outline-width: .6vh;
   padding: 10px 8px 10px 8px
@@ -104,7 +120,7 @@ body {
 
 h1, .title{
   font-size: 6.5vmin;
-  filter: drop-shadow(0px 0px 10px #ccb637);
+  filter: drop-shadow(0px 0px 10px #DDAF26);
 }
 
 a {
@@ -118,7 +134,7 @@ a:hover {
 
 .homeMarquee {
   position: absolute;
-  bottom: 3%;
+  bottom: 2.5vh;
   white-space: nowrap;
   filter: drop-shadow(0px 0px 10px black);
 }
@@ -151,18 +167,22 @@ a:hover {
   padding-top: 8vh;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+  text-align: center;
+}
+.sidenavFallback{
+  width: 100%;
 }
 
 
 /* The navigation menu links */
 
 .sidenav a {
-  padding: 8px 8px 8px 8px;
+  padding: .8vh;
   text-decoration: none;
   font-size: 5vh;
-  color: #000000;
+  color: black;
   display: block;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 
@@ -182,26 +202,6 @@ a:hover {
   right: 30px;
   font-size: 7vh;
   margin-left: 50px;
-}
-
-
-/* The navigation menu links */
-
-.sidenav a {
-  padding: 8px 8px 8px 8px;
-  text-decoration: none;
-  font-size: 5vh;
-  color: #000000;
-  display: block;
-  transition: 0.3s
-}
-
-
-/* When you mouse over the navigation links, change their color */
-
-.sidenav a:hover,
-.offcanvas a:focus {
-  color: #FFFFFF;
 }
 
 

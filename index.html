@@ -10,11 +10,13 @@
 
 <body>
   <?php include_once("analyticstracking.php") ?>
-  <script src="menuScript.js"></script>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+
 
   <div>
     <div class="top">
-      <a><img class="menuStyle fadein0" src="res/menu.png" onclick="openNav()"></a>
+      <a href="menu.html" id="menuFallBackLink"><img class="menuStyle fadein0" src="res/menu.png" onclick="openNav()"></a>
       <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein1" src="res/hhstext.png"></a>
     </div>
 
@@ -26,8 +28,16 @@
         <a href="goals/index.html">GOALS</a>
         <a href="media/index.html">MEDIA</a>
         <a href="submit/index.html">SUBMISSIONS</a>
+        <a href="vote/index.html">ELECTIONS</a>
         <a href="links/index.html">LINKS</a>
         <a href="about/index.html">ABOUT</a>
+        <div class="scMediaBar">
+          <a href="https://www.remind.com/join/codemandos"><img src="res/remind.png"></img></a>
+          <a href="http://www.twitter.com/codemandos"><img src="res/twitter.png"></img></a>
+          <a href="http://www.instagram.com/codemandos"><img src="res/insta.png"></a>
+          <a href="https://www.youtube.com/channel/UCa28kT_mxmvuBlu2AHCYybg"><img src="res/yt.png"></a>
+          <a href="https://github.com/Codemandos/"><img src="res/git.png"></a>
+        </div>
       </center>
     </div>
   </div>
@@ -43,14 +53,14 @@
 
   <marquee scrollamount="13" class="homeMarquee fadeInMarquee">
     <a target="_blank" href="https://www.remind.com/join/codemandos">
-      <font color="#ccb637">IMPORTANT!!</font> Click here or text
-      <font color="#ccb637">@codemandos</font> to
-      <font color="#ccb637">81010</font> to sign up for Remind messages</a>
-    <a target="_blank" href="submit/index.html">Found something interesting? Submit it <font color="#ccb637">HERE</font> for others to see!</a>
-    <a target="_blank" href="goals/index.html"> Wondering what's next for the Codemandos? Read the  <font color="#ccb637">Goals</font> Section</a>
-    <a target="_blank" href="rules/index.html"> Make sure you understand and agree to the  <font color="#ccb637">Club Rules</font>!</a>
-    <a target="_blank" href="meetings/index.html"> Click here to see the  <font color="#ccb637">Meeting Schedule</font></a>
-    <a target="_blank" href="tools/index.html"> Check out some useful  <font color="#ccb637">Websites and Tools</font> to help you code</a>
+      <font color="#DDAF26">IMPORTANT!!</font> Click here or text
+      <font color="#DDAF26">@codemandos</font> to
+      <font color="#DDAF26">81010</font> to sign up for Remind messages</a>
+    <a target="_blank" href="submit/index.html">Found something interesting? Submit it <font color="#DDAF26">HERE</font> for others to see!</a>
+    <a target="_blank" href="goals/index.html"> Wondering what's next for the Codemandos? Read the  <font color="#DDAF26">Goals</font> Section</a>
+    <a target="_blank" href="rules/index.html"> Make sure you understand and agree to the  <font color="#DDAF26">Club Rules</font>!</a>
+    <a target="_blank" href="meetings/index.html"> Click here to see the  <font color="#DDAF26">Meeting Schedule</font></a>
+    <a target="_blank" href="tools/index.html"> Check out some useful  <font color="#DDAF26">Websites and Tools</font> to help you code</a>
   </marquee>
 </body>
 

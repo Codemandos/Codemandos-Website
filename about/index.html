@@ -9,11 +9,12 @@
 
 <body>
   <?php include_once("../analyticstracking.php") ?>
-  <script src="../menuScript.js"></script>
+  <script src="../jquery.js"></script>
+  <script src="../script.js"></script>
 
   <div>
     <div class="top">
-      <a><img class="menuStyle fadein0" src="../res/menu.png" onclick="openNav()"></a>
+      <a href="../menu.html" id="menuFallBackLink"><img class="menuStyle fadein0" src="../res/menu.png" onclick="openNav()"></a>
       <a target="_blank" href="http://hhs.sumnerschools.org/"> <img class="hhsText fadein1" src="../res/hhstext.png"></a>
     </div>
 
@@ -25,8 +26,16 @@
         <a href="../goals/index.html">GOALS</a>
         <a href="../media/index.html">MEDIA</a>
         <a href="../submit/index.html">SUBMISSIONS</a>
+        <a href="../vote/index.html">ELECTIONS</a>
         <a href="../links/index.html">LINKS</a>
         <a href="../about/index.html">ABOUT</a>
+        <div class="scMediaBar">
+          <a href="https://www.remind.com/join/codemandos"><img src="res/remind.png"></img></a>
+          <a href="http://www.twitter.com/codemandos"><img src="res/twitter.png"></img></a>
+          <a href="http://www.instagram.com/codemandos"><img src="res/insta.png"></a>
+          <a href="https://www.youtube.com/channel/UCa28kT_mxmvuBlu2AHCYybg"><img src="res/yt.png"></a>
+          <a href="https://github.com/Codemandos/"><img src="res/git.png"></a>
+        </div>
       </center>
     </div>
   </div>
@@ -35,7 +44,8 @@
     <h1 align="center">ABOUT</h1>
     <ul>
       <li>
-        Robotics Club & The Computer Science Club, which go by the name 'The Codemandos', were created to foster student knowledge in Engineering, Computer Science and Programming.
+        <font color="#DDAF26">Robotics Club & The Computer Science Club</font>, which go by the name '
+        <font color="#DDAF26">The Codemandos</font>', were created to foster student knowledge in Engineering, Computer Science and Programming.
       </li>
       <li>
         The Codemandos will be competing in VEX Robotics competitions as well as smaller competitions within the club.
@@ -46,13 +56,13 @@
       <li>
         Get Started
         <a href="../meetings/index.html">
-          <font color="#ccb637"> HERE</font>
+          <font color="#DDAF26"> HERE</font>
         </a>
       </li>
       <li>
         Meeting Schedule:
         <a href="../meetings/index.html">
-          <font color="#ccb637">AVAILABLE HERE</font>
+          <font color="#DDAF26">AVAILABLE HERE</font>
         </a>
       </li>
       <li>

@@ -2,8 +2,8 @@
  *  howler.js v2.0.3
  *  howlerjs.com
  *
- *  (c) 2013-2017, James Simpson of GoldFire Studios
- *  goldfirestudios.com
+ *  (c) 2013-2017, James Simpson of #DDAF26Fire Studios
+ *  #DDAF26firestudios.com
  *
  *  MIT License
  */
@@ -2200,8 +2200,8 @@
  *  howler.js v2.0.3
  *  howlerjs.com
  *
- *  (c) 2013-2017, James Simpson of GoldFire Studios
- *  goldfirestudios.com
+ *  (c) 2013-2017, James Simpson of #DDAF26Fire Studios
+ *  #DDAF26firestudios.com
  *
  *  MIT License
  */

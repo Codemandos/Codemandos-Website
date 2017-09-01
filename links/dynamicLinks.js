@@ -23,7 +23,7 @@ $(document).ready(function() {
       if (!curatedData[z][2].includes("http")) {
         curatedData[z][2] = "http" + curatedData[z][2];
       }
-      var newEl = $(('<a id="' + curatedData[z][0].slice(1) + '" href="' + curatedData[z][2] + '"></a>')).append($("<font color='gold'></font>").text(curatedData[z][1])).append($("<i></i>").text(" - " + curatedData[z][3]));
+      var newEl = $(('<a id="' + curatedData[z][0].slice(1) + '" href="' + curatedData[z][2] + '"></a>')).append($("<font color='#DDAF26'></font>").text(curatedData[z][1])).append($("<i></i>").text(" - " + curatedData[z][3]));
       $('ul').prepend(newEl);
       $('#' + curatedData[z][0].slice(1)).wrap("<li></li>");
     }
