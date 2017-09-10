@@ -23,6 +23,7 @@ function openNav() {
 }
 
 $(function(){
+
   $(document).keypress(function(event){
     if(event.which == 32){
       if(snakeShown){
