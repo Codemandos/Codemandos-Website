@@ -43,12 +43,14 @@
 }
 
 .scMediaBar{
-  position:absolute;
-  bottom:12%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 100px;
 }
 
 .scMediaBar a{
-  float:left;
+
 }
 
 .scMediaBar a img{
