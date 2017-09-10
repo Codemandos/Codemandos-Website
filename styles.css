@@ -43,10 +43,8 @@
 }
 
 .scMediaBar{
-  position:relative;
-  display:inline-block;
-  position:relative;
-  margin-top: 120px;
+  position:absolute;
+  bottom:10%;
 }
 
 .scMediaBar a{
