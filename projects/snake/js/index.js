@@ -1,5 +1,5 @@
 var app = new PIXI.Application( window.innerWidth, window.innerHeight, {
-    backgroundColor: 0x1099bb
+    backgroundColor: 0x000000
 } );
 document.body.appendChild( app.view );
 app.autoResize = true;
@@ -65,7 +65,7 @@ function addFood() {
 setInterval( addFood, 4000 );
 
 function addNewFoodBox() {
-    var newBox = [ Math.floor( Math.random() * ( window.innerWidth - 3 * boxesDimension ) ) + boxesDimension, Math.floor( Math.random() * ( window.innerHeight - 3 * boxesDimension ) ) + boxesDimension, boxesDimension, 0x00ff47 ];
+    var newBox = [ Math.floor( Math.random() * ( window.innerWidth - 3 * boxesDimension ) ) + boxesDimension, Math.floor( Math.random() * ( window.innerHeight - 3 * boxesDimension ) ) + boxesDimension, boxesDimension, Math.round(Math.random()) ?  0xf57037 : 0x1b2a4b];
     foodBoxes.push( newBox );
 }
 
@@ -81,13 +81,13 @@ function addWallBoxes() {
     var numberOfXBoxes = window.innerWidth / boxesDimension - 1;
 
     for ( i = 0; i < numberOfYBoxes; i++ ) {
-        createBox( 0, i * boxesDimension, boxesDimension, 0xff0000 );
-        createBox( window.innerWidth - boxesDimension, i * boxesDimension, boxesDimension, 0xff0000 );
+        createBox( 0, i * boxesDimension, boxesDimension, 0xDDAF26 );
+        createBox( window.innerWidth - boxesDimension, i * boxesDimension, boxesDimension, 0xDDAF26 );
     }
 
     for ( i = 0; i < numberOfXBoxes; i++ ) {
-        createBox( boxesDimension + i * boxesDimension, 0, boxesDimension, 0xff0000 );
-        createBox( boxesDimension + i * boxesDimension, window.innerHeight - boxesDimension, boxesDimension, 0xff0000 );
+        createBox( boxesDimension + i * boxesDimension, 0, boxesDimension, 0xDDAF26 );
+        createBox( boxesDimension + i * boxesDimension, window.innerHeight - boxesDimension, boxesDimension, 0xDDAF26 );
     }
 }
 
@@ -145,13 +145,13 @@ function drawBoxes() {
 
 function initializePlayerBox() {
     playerBoxes = [
-        [ window.innerWidth / 2, window.innerHeight / 2, boxesDimension, 0x5437a4 ]
+        [ window.innerWidth / 2, window.innerHeight / 2, boxesDimension, 0xDDAF26 ]
     ];
 }
 
 function addNewPlayerBox() {
     var newBox;
-    newBox = [ playerBoxes[ 0 ][ 0 ], playerBoxes[ 0 ][ 1 ], boxesDimension, 0x5437a4 ];
+    newBox = [ playerBoxes[ 0 ][ 0 ], playerBoxes[ 0 ][ 1 ], boxesDimension, 0xDDAF26 ];
     playerBoxes.push( newBox );
 }
 
