@@ -175,28 +175,32 @@ function checkBoxCollision( b1, b2 ) {
 }
 
 
-document.addEventListener( 'keydown', onKeyDown );
-
-function onKeyDown( e ) {
-    switch ( e.keyCode ) {
+$(function(){
+  $(document).keyup(function(e){
+    console.log(e.which);
+    switch (e.which) {
+        case 87:
         case 38:
             if ( playerLastDirection !== "down" ) {
                 playerLastDirection = "up";
                 addNewPlayerBox();
             }
             break;
+        case 65:
         case 37:
             if ( playerLastDirection !== "right" ) {
                 playerLastDirection = "left";
                 addNewPlayerBox();
             }
             break;
+        case 68:
         case 39:
             if ( playerLastDirection !== "left" ) {
                 playerLastDirection = "right";
                 addNewPlayerBox();
             }
             break;
+        case 83:
         case 40:
             if ( playerLastDirection !== "up" ) {
                 playerLastDirection = "down";
@@ -208,7 +212,10 @@ function onKeyDown( e ) {
             initializePlayerBox();
             break;
     }
-}
+  });
+});
+
+
 
 window.onresize = resize;
 

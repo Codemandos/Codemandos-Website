@@ -11,6 +11,7 @@
   height: 70%;
   width: auto;
   vertical-align: middle;
+  user-select: none;
 }
 
 .menuStyle {
@@ -42,18 +43,22 @@
 }
 
 .scMediaBar{
-  bottom:10%;
-  display: table;
-  margin: 0 auto;
-  margin-top: 12vh;
+  position:relative;
+  display:inline-block;
+  position:relative;
+  margin-top: 13vh;
+  bottom: 10%;
 }
 
 .scMediaBar a{
-   float:left;
+  float:left;
 }
 
 .scMediaBar a img{
   height: 7vh;
+}
+.scMediaBarFallbackMargin{
+  margin-top: 5vh;
 }
 
 .overFlowHidden{
@@ -68,7 +73,7 @@
   outline-color: #DDAF26;
   outline-style: dotted;
   outline-width: .6vh;
-  padding: 10px 8px 10px 8px
+  padding: 10px 8px 10px 8px;
 }
 
 #HHSLogo {
@@ -81,6 +86,7 @@
   right: 25%;
   left: 25%;
   filter: drop-shadow(0 0 25px black);
+  transition: all .5s ease-out;
 }
 
 #vid {
@@ -92,6 +98,7 @@
   right: 0;
   margin: auto;
   z-index: -1;
+  transition: all 1s ease-out;
 }
 
 ul {
@@ -111,16 +118,15 @@ body {
   margin: 1vh;
   overflow-x: hidden;
   background-color: black;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -o-user-select: none;
 }
 
 h1, .title{
   font-size: 6.5vmin;
   filter: drop-shadow(0px 0px 10px #DDAF26);
+  user-select: none;
+}
+img{
+  user-select: none;
 }
 
 a {
@@ -130,6 +136,17 @@ a {
 
 a:hover {
   opacity: .7;
+  transition: all .3s ease-in-out;
+}
+
+.sidenav div a img:hover{
+  transform: scale(1.3,1.3);
+  transition: all .5s ease-in-out;
+}
+
+div a img:hover, h1:hover{
+  transform: scale(1.08,1.08);
+  transition: all .5s ease-in-out;
 }
 
 .homeMarquee {
@@ -137,6 +154,7 @@ a:hover {
   bottom: 2.5vh;
   white-space: nowrap;
   filter: drop-shadow(0px 0px 10px black);
+  transition: all 1s ease-out;
 }
 
 .homeMarquee a {
@@ -190,7 +208,7 @@ a:hover {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-  color: #FFFFFF;
+  color: white;
 }
 
 
@@ -298,4 +316,11 @@ a:hover {
   to {
     opacity: 1;
   }
+}
+
+::selection {
+  background: #DDAF26; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #DDAF26; /* Gecko Browsers */
 }
