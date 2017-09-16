@@ -2,7 +2,7 @@
 WARNING - Work-in-Progress
 ----
 
-Released Website - www.hhscs.club, www.codemandos.tk and soon www.codemandos.org
+Released Website - codemandos.club & codemandos.tk
 
 Beta - http://codemandos.github.io
 
