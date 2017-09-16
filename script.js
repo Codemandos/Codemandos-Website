@@ -24,6 +24,8 @@ function openNav() {
 
 $(function(){
 
+  $('.form').focus();
+
   $(document).keypress(function(event){
     if(event.which == 32){
       if(snakeShown){
