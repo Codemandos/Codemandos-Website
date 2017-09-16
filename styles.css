@@ -53,6 +53,11 @@
   outline-width: 1vh;
 }
 
+.form{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .scMediaBar{
   display: flex;
   justify-content: center;
