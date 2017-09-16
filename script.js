@@ -20,10 +20,12 @@ function openNav() {
   $("#menuFallBackLink").attr("href", "#");
   openNavAction();
   isOpen = true;
+  console.log("Opened nav");
 }
 
 $(".form").focusout(function(){
   $(this).focus();
+  console.log("Form out of focus. Focusing back on form");
 });
 
 $(function(){
@@ -37,6 +39,7 @@ $(function(){
         $('#HHSLogo').hide();
         $('.homeMarquee').hide();
         $('<iframe src="projects/snake/index.html" frameborder="0" scrolling="no" width="100%" height="100%" id="snakeEasterEgg" class="fadein1"></iframe>').appendTo('.content').focus();
+        console.log("EasterEgg: Showing Snake");
       }
     }
   })
@@ -84,6 +87,7 @@ function hideSnake(){
   $('#snakeEasterEgg').hide();
   $('#HHSLogo').show();
   $('.homeMarquee').show();
+  console.log("EasterEgg: Hid Snake");
 }
 
 function getRandomColor() {
@@ -92,6 +96,7 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
+  console.log("EasterEgg: Changed to random colors");
   return color;
 }
 
@@ -100,9 +105,11 @@ function binaryToggle(){
   if(isBinary){
     recursiveReplace(document.body);
     isBinary=false;
+    console.log("EasterEgg: Back to text");
   }else{
     recursiveReplace(document.body);
     isBinary = true;
+    console.log("EasterEgg: Back to binary");
   }
 }
 
@@ -110,6 +117,7 @@ function binaryToggle(){
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   isOpen = false;
+  console.log("Closed Nav");
 }
 
 window.addEventListener('resize', function(event) {
