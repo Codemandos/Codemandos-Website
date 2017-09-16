@@ -22,8 +22,11 @@ function openNav() {
   isOpen = true;
 }
 
-$(function(){
+$(".form").focusout(function(){
+  $(this).focus();
+});
 
+$(function(){
 
   $(document).keypress(function(event){
     if(event.which == 32){
