@@ -1,5 +1,5 @@
 var isOpen = false;
-var isBinary = false;
+var isBin = false;
 var clicked = [];
 var videoBlurred = true;
 var snakeShown = false;
@@ -38,8 +38,8 @@ $(function(){
         snakeShown = true;
         $('#HHSLogo').hide();
         $('.homeMarquee').hide();
-        $('<iframe src="projects/snake/index.html" frameborder="0" scrolling="no" width="100%" height="100%" id="snakeEasterEgg" class="fadein1"></iframe>').appendTo('.content').focus();
-        console.log("EasterEgg: Showing Snake");
+        $('<iframe src="projects/noodle/index.html" frameborder="0" scrolling="no" width="100%" height="100%" id="secret" class="fadein1"></iframe>').appendTo('.content').focus();
+        console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01010011 01101000 01101111 01110111 01101001 01101110 01100111 00100000 01010011 01101110 01100001 01101011 01100101");
       }
     }
   })
@@ -84,10 +84,10 @@ $(function(){
 
 function hideSnake(){
   snakeShown = false;
-  $('#snakeEasterEgg').hide();
+  $('#secret').hide();
   $('#HHSLogo').show();
   $('.homeMarquee').show();
-  console.log("EasterEgg: Hid Snake");
+  console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01001000 01101001 01100100 00100000 01010011 01101110 01100001 01101011 01100101");
 }
 
 function getRandomColor() {
@@ -96,20 +96,20 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
-  console.log("EasterEgg: Changed to random colors");
+  console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01000011 01101000 01100001 01101110 01100111 01100101 01100100 00100000 01110100 01101111 00100000 01110010 01100001 01101110 01100100 01101111 01101101 00100000 01100011 01101111 01101100 01101111 01110010 01110011");
   return color;
 }
 
 
 function binaryToggle(){
-  if(isBinary){
+  if(isBin){
     recursiveReplace(document.body);
-    isBinary=false;
-    console.log("EasterEgg: Back to text");
+    isBin=false;
+    console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01000010 01100001 01100011 01101011 00100000 01110100 01101111 00100000 01110100 01100101 01111000 01110100");
   }else{
     recursiveReplace(document.body);
-    isBinary = true;
-    console.log("EasterEgg: Back to binary");
+    isBin = true;
+    console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01000010 01100001 01100011 01101011 00100000 01110100 01101111 00100000 01100010 01101001 01101110 01100001 01110010 01111001");
   }
 }
 
@@ -131,23 +131,23 @@ function recursiveReplace(node) {
 if(node.className != "sidenav"){
   if (node.nodeType == 3) { // text node
     var text = node.nodeValue.trim();
-    var convertedText;
+    var convTxt;
     if (text.replace(/\s/g, '') != "") {
-      if(isBinary){
+      if(isBin){
         eachByte = text.split(" ");
-        convertedString = [];
+        convStr = [];
         for(i=0;i<eachByte.length;i++){
-          convertedString.push(String.fromCharCode(parseInt(eachByte[i], 2)));
+          convStr.push(String.fromCharCode(parseInt(eachByte[i], 2)));
         }
-        convertedText = convertedString.join("");
+        convTxt = convStr.join("");
       } else{
         for (x = 0; x < text.length; x++) {
-            convertedText += text[x].charCodeAt(0).toString(2) + " ";
+            convTxt += text[x].charCodeAt(0).toString(2) + " ";
         }
       }
 
-      convertedText = convertedText.replace("undefined", "");
-      node.nodeValue = node.nodeValue.replace(text, convertedText);
+      convTxt = convTxt.replace("undefined", "");
+      node.nodeValue = node.nodeValue.replace(text, convTxt);
     }
 
 
