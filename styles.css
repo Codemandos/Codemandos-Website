@@ -1,11 +1,13 @@
 .elections{
   position:absolute;
   visibility: hidden;
+  display: none;
 }
 
 .submissions{
   position:absolute;
   visibility: hidden;
+  display: none;
 }
 
 .top {
