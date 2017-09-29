@@ -1,3 +1,13 @@
+.elections{
+  position:absolute;
+  visibility: hidden;
+}
+
+.submissions{
+  position:absolute;
+  visibility: hidden;
+}
+
 .top {
   position: relative;
   height: 12vmin;
@@ -68,7 +78,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .scMediaBar a img{
@@ -221,6 +231,9 @@ div a img:hover, h1:hover{
 }
 .sidenavFallback{
   width: 100%;
+}
+.sidenav center{
+  height: inherit;
 }
 
 
