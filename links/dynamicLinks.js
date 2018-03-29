@@ -13,10 +13,16 @@ $(document).ready(function() {
     //  console.log(titleFiltered);
     var curatedData = [];
     for (i = 0; i < titleFiltered.length; i++) {
-      var entry = titleFiltered[i].split(": ");
-      entry.push(linkFiltered[i].split(": ")[1]);
-      entry.push(descriptionFiltered[i].split(": ")[1]);
-      curatedData.push(entry);
+      try{
+        var entry = titleFiltered[i].split(": ");
+        entry.push(linkFiltered[i].split(": ")[1]);
+        entry.push(descriptionFiltered[i].split(": ")[1]);
+        curatedData.push(entry);
+        console.log(entry);
+      } catch (e){
+
+      }
+
     }
     console.log(descriptionRaw);
     for (z = 0; z < curatedData.length; z++) {
