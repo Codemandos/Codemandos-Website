@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Tactical</title>
+    <title>HHSCS | NHS</title>
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Expires" CONTENT="-1">
     <style>
@@ -9,7 +9,6 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: lightgray;
         }
 
         iframe {
@@ -18,7 +17,7 @@
         }
 
         .loader {
-            color: black;
+            color: rgb(15, 38, 68);
             font-size: 10vh;
             text-indent: -9999em;
             overflow: hidden;
@@ -111,13 +110,13 @@
         window.onload = function() {
             var iframe = document.getElementById("iframe");
 
-                iframe.src = "https://andreig992.github.io/Tactical-Tic-Tac-Toe/game/game.html"
+                iframe.src = "https://script.google.com/macros/s/AKfycbyY9-o6qKY5ox2QVfxSFEfVtTe8Bv5y4417_5x4is7W_UWdFmA/exec";
 
             iframe.onload = function() {
                 var loader = document.getElementById("loader");
                 setTimeout(function(){
-                loader.parentNode.removeChild(loader);
-              }, 300);
+                  loader.parentNode.removeChild(loader);
+                }, 300);
             }
         }
     </script>
