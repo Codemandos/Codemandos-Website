@@ -38,7 +38,7 @@ $(function(){
         snakeShown = true;
         $('#HHSLogo').hide();
         $('.homeMarquee').hide();
-        $('<iframe src="projects/noodle/index.html" frameborder="0" scrolling="no" width="100%" height="100%" id="secret" class="fadein1"></iframe>').appendTo('.content').focus();
+        $('<iframe src="https://andreig992.github.io/Noodle/" frameborder="0" scrolling="no" width="100%" height="100%" id="secret" class="fadein1"></iframe>').appendTo('.content').focus();
         console.log("01000101 01100001 01110011 01110100 01100101 01110010 01000101 01100111 01100111 00111010 00100000 01010011 01101000 01101111 01110111 01101001 01101110 01100111 00100000 01010011 01101110 01100001 01101011 01100101");
       }
     }
